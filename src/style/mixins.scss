@@ -1,0 +1,30 @@
+/*
+        MEDIA QUERY MANAGER
+
+        0 - 600px Phone,
+        600 - 900 Tablet,
+        900 - 1200 Desktop,
+        1200+ Big Screen,
+*/
+$breakpoints: (
+  mobile: 600px,
+  tablet: 900px,
+  desktop: 1200px,
+  big-desktop: 1200px,
+);
+
+// Mixin for media query witch is posible to set 2 or more @media rules
+@mixin respond($keys...) {
+  @each $key in $keys {
+    @if $key == big-desktop {
+      //map-get => key: value => depent on $key(input) take value(in px) from $breakpoints
+      @media (min-width: map-get($breakpoints, $key)) {
+        @content;
+      }
+    } @else {
+      @media (max-width: map-get($breakpoints, $key)) {
+        @content;
+      }
+    }
+  }
+}
