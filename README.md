@@ -8,7 +8,7 @@ I had a lot of fun with the project. It was a good chaling for me.
 
 ---
 
-#  [Link to Project](https://teaser-slider.vercel.app/)
+#  [Link Client-Vercel(website)](https://teaser-slider.vercel.app/)
 
 
 
