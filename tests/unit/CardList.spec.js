@@ -63,12 +63,14 @@ describe("CardList.vue", () => {
   it("should test computed properties 'listPostion'", async () => {
     expect(wrapper.vm.listPosition).toStrictEqual({
       "transform": "translateX(-0%)",
+      "transition": "all 0.5s ease"
     });
 
     await wrapper.setData({ currentIndex: 1 });
 
     expect(wrapper.vm.listPosition).toStrictEqual({
       "transform": "translateX(-100%)",
+      "transition": "all 0.5s ease"
     });
   });
 

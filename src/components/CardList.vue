@@ -10,7 +10,7 @@
 
     <div class="card-list">
       <ul class="card-list-container" v-if="animals.length > 0">
-        <li 
+        <li
           class="card-item"
           v-for="(animal, index) in animals"
           :key="index"
@@ -37,7 +37,6 @@
         <SpinerComponent />
       </p>
 
-      <!-- error handling-->
       <li id="error" v-if="isError">
         <ErrorComponent />
       </li>
@@ -161,6 +160,7 @@ export default {
       }
       if (this.touch.endX > this.touch.startX) {
         this.prevIndex();
+
       }
     },
 
@@ -288,6 +288,12 @@ export default {
       color: $arrowColor;
       background: $arrowBg;
       border: 0.1rem solid $arrowBorder;
+    }
+    #spinner {
+      justify-content: center;
+      align-items: center;
+      min-height: 50vh;
+      display: flex;
     }
   }
 
