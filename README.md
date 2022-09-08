@@ -4,7 +4,7 @@
 - This small project is made for Restplatzbörse.
 
 * This is my first time with this framework and to be honest I'm quite fascinated with how easy it was to understand the basic functions and structure.
-I had a lot of fun with the project. It was a good chaling for me.
+I had a lot of fun with the project. It was a good challenge for me.
 
 ---
 
